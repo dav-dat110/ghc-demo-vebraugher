@@ -1,0 +1,133 @@
+---
+title: GHC Demo Assignment
+subtitle: CSC 110 - Fall 2025
+author: Veyane V Braugher
+date: October 15, 2025
+format:
+  pdf:
+    pdf-engine: pdflatex
+    toc: true
+    toc-depth: 1
+    fig-width: 8
+    fig-height: 5
+    geometry:
+      - top=20mm
+      - left=20mm
+      - right=20mm
+      - heightrounded
+  html:
+    toc: true
+    theme: minty
+---
+
+# Set Up:
+
+```{r}
+#| include=FALSE
+
+library(tidyverse)
+
+data(mpg)
+glimpse(mpg)
+```
+
+# Homework:
+
+```{r}
+#| layout-ncol: 1
+#| fig-cap: 
+#|   - "Fuel mileage scatterplot"
+
+ggplot(
+  mpg,
+  aes(
+    x = displ,
+    y = hwy
+  )
+) +
+geom_point() +
+labs(
+  title = "Relationship between engine displacement and highway miles per gallon",
+  x = "Engine Displacement",
+  y = "Highway miles per gallon"
+)
+
+```
+
+• A link to davidson.edu
+
+[davidson.edu](https://davidson.edu)
+
+• An unordered list displaying the other classes you are taking this semester
+
+-   My Other Classes
+    -   Chinese 301
+    -   Debunking Race
+    -   Art for Games
+        -   Other actives include Dance Ensemble and a band called El Zoológico/The Zoo
+
+• An ordered list displaying your top 3 favorite movies or TV shows
+
+1.  White Chicks (2004)
+2.  Sister Act (1992)
+    i)  Including Sister Act 2: Back in the Habit (1993), both movies are incredible.
+3.  The Wiz (1978)
+
+• A footnote
+
+Here is a footnote![^1]
+
+[^1]: Footnote!
+
+• An equation showing the quadratic formula in display mode
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+• A flowchart diagram in Mermaid
+
+```{mermaid}
+flowchart LR
+  A[Start] --> B(Read Temp)
+  B --> C{Temp < 32 F?}
+  C --> D[Yes, Below Freezing]
+  C --> E[No, Above Freezing]
+
+```
+
+• A page break between your Homework and Reflection headings
+
+Check!
+
+• A blockquote containing the first sentence of U.S. President Abraham Lincoln’s “Gettysburg Address”
+
+> "Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."
+>
+> -Abraham Lincoln
+
+• Three callout blocks, with one each of type note, tip, and important. Make one of the callout blocks collapsible.
+
+::: callout-note
+## Note Has Been Completed
+:::
+
+::: callout-tip
+## Remember To Make The Callouts Collapsible!
+:::
+
+::: callout-important
+## Breaks Are Important!
+:::
+
+{{< pagebreak >}}
+
+# Reflection:
+
+Out of all the tips and tricks that I got to experiment with veritable scavenger hunt are the **unorderded/ordered list**, the **footnote**, the **blockquote**, and the **callout** blocks. I feel like all of these will be especially helpful for formatting our final project.
+
+For the **ordered lists** and **unordered lists**, they are useful for organizing data, topics, certain points, and anything else that needs to be listed. **Ordered lists** are helpful for showing concepts, rankings, points, and varying ideas. The **unordered lists** on the other hand are useful for any type of points, though they're a little less "formal" in a way, but still helpful in organizing any points that we want to list.
+
+The **footnotes** are rather self explanatory are they are going to be super helpful in referencing our sources or adding additional notes that will be needed in our report and for our data. The **blockquotes** also serve as another way to highlight any quotes or statistics that we want to emphasize for our data or findings. Though both are straightforward, they are extremely useful in creating a comprehensive report and a clean format.
+
+Finally the **callout blocks** are defiantly going to come in handy. When we choose to render in html or just to take a look at something, the callout blocks can act as guides for our readers or for ourselves to remind ourselves on something we may have forgotten or either of us overlooked. The different types of **callouts** also help in whatever were trying to highlight.
